@@ -1,7 +1,7 @@
 import {requireNativeComponent} from 'react-native';
-import React from 'react';
+import React, { HTMLAttributes, SyntheticEvent } from "react";
 
-export interface NumericInputProps {}
+export interface NumericInputProps extends HTMLAttributes<SyntheticEvent>{}
 
 export function NumericInput(props: NumericInputProps) {
   return <PGLNumericInput {...props} />;

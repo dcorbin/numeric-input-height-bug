@@ -6,49 +6,35 @@
  */
 
 import React from 'react';
-import { SafeAreaView, StyleSheet, Text, TextInput, View } from "react-native";
+import {SafeAreaView, StyleSheet, Text, TextInput, View} from 'react-native';
 import {NumericInput} from './NumericInput';
 
 function App(): JSX.Element {
   return (
     <SafeAreaView>
-      <View
-        style={{
-          flexDirection: 'row',
-          alignItems: 'center',
-          justifyContent: 'space-evenly',
-        }}>
-        <Text style={{flex: 2, fontSize: 24}}>Numeric Input</Text>
+      <View style={styles.row}>
+        <Text style={styles.label}>Numeric Input</Text>
         <NumericInput style={styles.input} />
       </View>
-      <View
-        style={{
-          flexDirection: 'row',
-          alignItems: 'center',
-          justifyContent: 'space-evenly',
-        }}>
-        <Text style={{flex: 2, fontSize: 24}}>TextInput</Text>
-        <TextInput
-          style={styles.input}
-          onChange={e => {
-            e.preventDefault();
-            e.stopPropagation();
-          }}
-          onKeyPress={e => {
-            e.preventDefault();
-            e.stopPropagation();
-            return false;
-          }}
-        />
+      <View style={styles.row}>
+        <Text style={styles.label}>TextInput</Text>
+        <TextInput style={styles.input} />
       </View>
     </SafeAreaView>
   );
 }
 const styles = StyleSheet.create({
+  label: {flex: 2, fontSize: 24},
   input: {
-    flex: 1, borderWidth: 1, fontSize: 24, height: 32
+    flex: 1,
+    borderWidth: 1,
+    fontSize: 24,
+  },
+  row: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
   },
 });
-
 
 export default App;
