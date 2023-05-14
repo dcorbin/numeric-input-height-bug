@@ -23,6 +23,7 @@ class PGLNumericInputManager: RCTViewManager, UITextFieldDelegate {
     field .addTarget(self,
             action: #selector(PGLNumericInputManager.textFieldDidChange(_:)),
             for: UIControl.Event.editingChanged)
+    field.keyboardType = UIKeyboardType.numbersAndPunctuation
 
     return field
   }
@@ -35,12 +36,16 @@ class PGLNumericInputManager: RCTViewManager, UITextFieldDelegate {
 
   @objc
   func textFieldDidChange(_ textField: UITextField){
-    guard var value = textField.text else { return }
+    guard let originalValue = textField.text else { return }
+    var value = originalValue
     let isNegative = value.starts(with: Constants.MINUS_STRING)
     value = value.replacingOccurrences(of: Constants.MINUS_STRING, with: "")
     if isNegative {
       value = Constants.MINUS_STRING + value
     }
-    textField.text = value
+    if originalValue != value {
+      textField.text = value
+    }
+
   }
 }
