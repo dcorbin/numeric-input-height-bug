@@ -8,13 +8,16 @@ class PGLNumericInputManager: RCTViewManager, UITextFieldDelegate {
     static let MINUS: Character = "-"
     static let MINUS_STRING = String(MINUS)
   }
+
+  var keyboardController: PGLNumericKeyboardController?;
+
   private static let logger = Logger(
           subsystem: Bundle.main.bundleIdentifier!,
           category: String(describing: PGLNumericInputManager.self)
   )
 
   override static func requiresMainQueueSetup() -> Bool {
-    return true;
+    true;
   }
 
   override func view() -> UIView! {
@@ -24,6 +27,15 @@ class PGLNumericInputManager: RCTViewManager, UITextFieldDelegate {
             action: #selector(PGLNumericInputManager.textFieldDidChange(_:)),
             for: UIControl.Event.editingChanged)
     field.keyboardType = UIKeyboardType.numbersAndPunctuation
+
+    if (keyboardController == nil) {
+      keyboardController = PGLNumericKeyboardController()
+    }
+
+    if (keyboardController != nil) {
+      field.inputViewController = keyboardController!
+      field.inputView = keyboardController?.view
+    }
 
     return field
   }
