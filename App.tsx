@@ -18,7 +18,7 @@ function App(): JSX.Element {
       </View>
       <View style={styles.row}>
         <Text style={styles.label}>TextInput</Text>
-        <TextInput style={styles.input} />
+        <TextInput inputMode={'numeric'} style={styles.input} />
       </View>
     </SafeAreaView>
   );
