@@ -8,9 +8,22 @@
 import Foundation
 import UIKit
 
-@objc
+
 class PGLNumericKeyboardController : UIInputViewController {
-    @IBOutlet weak var returnKey: UIButton!
+    @IBOutlet weak var negateButton: UIButton!
+    @IBAction func keyButtonPressed(_ sender: UIButton) {
+        let title = sender.currentAttributedTitle?.string
+        if (title != nil) {
+            self.textDocumentProxy.insertText(title!)
+        }
+    }
+    @IBAction func returnKeyPressed(_ sender: Any) {
+        self.dismissKeyboard()
+    }
+    @IBAction func backspaceButtonPressed(_ sender: Any) {
+        self.textDocumentProxy.deleteBackward()
+    }
+
     init() {
         super.init(nibName: "NumericKeyboardView", bundle: nil)
     }
@@ -19,7 +32,4 @@ class PGLNumericKeyboardController : UIInputViewController {
         super.init(coder: coder)!
     }
 
-    @IBAction func returnPressed() {
-
-    }
 }

@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PGLNumericKeyboardController" customModule="NumericInput" customModuleProvider="target">
             <connections>
+                <outlet property="negateButton" destination="EfN-eD-q4q" id="QAn-Gj-whG"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Ye0-xe-m0T"/>
             </connections>
         </placeholder>
@@ -40,6 +41,9 @@
                                         <color key="baseForegroundColor" systemColor="labelColor"/>
                                         <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="keyButtonPressed:" destination="-1" eventType="touchDown" id="4kc-ck-Yko"/>
+                                    </connections>
                                 </button>
                                 <button contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z5F-i2-rTN" userLabel="Button_2">
                                     <rect key="frame" x="133" y="0.0" width="127" height="128"/>
@@ -57,6 +61,9 @@
                                         <color key="baseForegroundColor" systemColor="labelColor"/>
                                         <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="keyButtonPressed:" destination="-1" eventType="touchDown" id="rM2-dg-rDL"/>
+                                    </connections>
                                 </button>
                                 <button contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MRH-Ad-JTZ" userLabel="Button_3">
                                     <rect key="frame" x="266" y="0.0" width="127" height="128"/>
@@ -74,6 +81,9 @@
                                         <color key="baseForegroundColor" systemColor="labelColor"/>
                                         <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="keyButtonPressed:" destination="-1" eventType="touchDown" id="QQd-rq-JjG"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>
@@ -96,6 +106,9 @@
                                         <color key="baseForegroundColor" systemColor="labelColor"/>
                                         <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="keyButtonPressed:" destination="-1" eventType="touchDown" id="Neh-1M-vi1"/>
+                                    </connections>
                                 </button>
                                 <button contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DBA-ie-bVM" userLabel="Button_5">
                                     <rect key="frame" x="133" y="0.0" width="127" height="128"/>
@@ -113,6 +126,9 @@
                                         <color key="baseForegroundColor" systemColor="labelColor"/>
                                         <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="keyButtonPressed:" destination="-1" eventType="touchDown" id="JCp-L0-yY5"/>
+                                    </connections>
                                 </button>
                                 <button contentMode="scaleToFill" horizontalHuggingPriority="2" verticalHuggingPriority="1" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a2v-7c-qjv" userLabel="Button_6">
                                     <rect key="frame" x="266" y="0.0" width="127" height="128"/>
@@ -130,6 +146,9 @@
                                         <color key="baseForegroundColor" systemColor="labelColor"/>
                                         <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="keyButtonPressed:" destination="-1" eventType="touchDown" id="ZWs-4H-3Av"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>
@@ -152,6 +171,9 @@
                                         <color key="baseForegroundColor" systemColor="labelColor"/>
                                         <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="keyButtonPressed:" destination="-1" eventType="touchDown" id="ahV-nw-27o"/>
+                                    </connections>
                                 </button>
                                 <button contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pNp-4Y-q20" userLabel="Button_8">
                                     <rect key="frame" x="133" y="0.0" width="127" height="128"/>
@@ -169,6 +191,9 @@
                                         <color key="baseForegroundColor" systemColor="labelColor"/>
                                         <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="keyButtonPressed:" destination="-1" eventType="touchDown" id="DZP-ZT-KSc"/>
+                                    </connections>
                                 </button>
                                 <button contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="shl-vV-11Z" userLabel="Button_9">
                                     <rect key="frame" x="266" y="0.0" width="127" height="128"/>
@@ -186,6 +211,9 @@
                                         <color key="baseForegroundColor" systemColor="labelColor"/>
                                         <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="keyButtonPressed:" destination="-1" eventType="touchCancel" id="Fs6-tD-Idf"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>
@@ -199,7 +227,7 @@
                                     <buttonConfiguration key="configuration" style="filled" subtitle="" cornerStyle="small" titleAlignment="center">
                                         <backgroundConfiguration key="background"/>
                                         <attributedString key="attributedTitle">
-                                            <fragment content="+/-">
+                                            <fragment content="-">
                                                 <attributes>
                                                     <font key="NSFont" size="36" name="Helvetica"/>
                                                 </attributes>
@@ -208,6 +236,9 @@
                                         <color key="baseForegroundColor" systemColor="labelColor"/>
                                         <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="keyButtonPressed:" destination="-1" eventType="touchDown" id="zv8-ql-fJm"/>
+                                    </connections>
                                 </button>
                                 <button contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="48X-4n-667" userLabel="Button_0">
                                     <rect key="frame" x="133" y="0.0" width="127" height="128"/>
@@ -225,6 +256,9 @@
                                         <color key="baseForegroundColor" systemColor="labelColor"/>
                                         <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="keyButtonPressed:" destination="-1" eventType="touchDown" id="rgi-sP-L47"/>
+                                    </connections>
                                 </button>
                                 <button contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lHd-5g-L0h" userLabel="Button_)Bksp">
                                     <rect key="frame" x="266" y="0.0" width="127" height="128"/>
@@ -239,6 +273,9 @@
                                         <color key="baseForegroundColor" systemColor="labelColor"/>
                                         <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="backspaceButtonPressed:" destination="-1" eventType="touchUpInside" id="X4s-JQ-jJ1"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>
@@ -271,6 +308,9 @@
                                         </attributedString>
                                         <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="returnKeyPressed:" destination="-1" eventType="touchUpInside" id="5MA-ji-1Tx"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>
